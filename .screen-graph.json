@@ -1,0 +1,286 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/ElementLight/ElementLight.tsx",
+      "label": "ElementLight",
+      "routes": [
+        "/",
+        "*"
+      ],
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/BlogPage/BlogPage.tsx",
+      "label": "BlogPage",
+      "routes": [
+        "/blog"
+      ]
+    },
+    {
+      "id": "src/screens/BlogPostPage/BlogPostPage.tsx",
+      "label": "BlogPostPage",
+      "routes": [
+        "/blog/:id",
+        "/blog/:id/*"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "src\\screens\\ElementLight\\ElementLight.tsx:259:16-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\ElementLight\\ElementLight.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a href=\"/blog\" className=\"text-[#030303] hover:text-gray-600 transition-colors\">Blog</a>",
+          "line": 259,
+          "endLine": 259,
+          "column": 16,
+          "endColumn": 105,
+          "sourceFile": "src\\screens\\ElementLight\\ElementLight.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\ElementLight\\ElementLight.tsx:359:10-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\ElementLight\\ElementLight.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a \n            href=\"/blog\" \n            className=\"block text-[#030303] hover:text-gray-600 transition-colors text-lg font-medium\"\n            onClick={() => setIsMobileMenuOpen(false)}\n          >\n            Blog\n          </a>",
+          "line": 359,
+          "endLine": 365,
+          "column": 10,
+          "endColumn": 14,
+          "sourceFile": "src\\screens\\ElementLight\\ElementLight.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\ElementLight\\ElementLight.tsx:788:19-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\ElementLight\\ElementLight.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a href=\"/blog\" className=\"inline-flex items-center bg-[#ffde17] text-[#030303] hover:bg-[#ffde17]/90 rounded-lg px-8 py-3 font-semibold transition-colors\">\n                     View All Articles\n                     <svg className=\"ml-2 w-5 h-5\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\">\n                       <path strokeLinecap=\"round\" strokeLinejoin=\"round\" strokeWidth={2} d=\"M17 8l4 4m0 0l-4 4m4-4H3\" />\n                     </svg>\n                   </a>",
+          "line": 788,
+          "endLine": 793,
+          "column": 19,
+          "endColumn": 23,
+          "sourceFile": "src\\screens\\ElementLight\\ElementLight.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\ElementLight\\ElementLight.tsx:905:29-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\ElementLight\\ElementLight.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a href=\"/blog\" className=\"hover:underline\">Blog</a>",
+          "line": 905,
+          "endLine": 905,
+          "column": 29,
+          "endColumn": 81,
+          "sourceFile": "src\\screens\\ElementLight\\ElementLight.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPage\\BlogPage.tsx:110:16-to-src\\screens\\ElementLight\\ElementLight.tsx",
+      "source": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "target": "src\\screens\\ElementLight\\ElementLight.tsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<a href=\"/\" className=\"text-[#030303] hover:text-[#ffde17] transition-colors cursor-pointer\">Home</a>",
+          "line": 110,
+          "endLine": 110,
+          "column": 16,
+          "endColumn": 117,
+          "sourceFile": "src\\screens\\BlogPage\\BlogPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPage\\BlogPage.tsx:115:16-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a href=\"/blog\" className=\"text-[#030303] hover:text-[#ffde17] transition-colors\">Blog</a>",
+          "line": 115,
+          "endLine": 115,
+          "column": 16,
+          "endColumn": 106,
+          "sourceFile": "src\\screens\\BlogPage\\BlogPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPage\\BlogPage.tsx:170:10-to-src\\screens\\ElementLight\\ElementLight.tsx",
+      "source": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "target": "src\\screens\\ElementLight\\ElementLight.tsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<a \n            href=\"/\" \n            className=\"block text-[#030303] hover:text-[#ffde17] transition-colors cursor-pointer text-lg font-medium\" \n            onClick={() => setIsMobileMenuOpen(false)}\n          >\n            Home\n          </a>",
+          "line": 170,
+          "endLine": 176,
+          "column": 10,
+          "endColumn": 14,
+          "sourceFile": "src\\screens\\BlogPage\\BlogPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPage\\BlogPage.tsx:205:10-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a \n            href=\"/blog\" \n            className=\"block text-[#030303] hover:text-[#ffde17] transition-colors text-lg font-medium\"\n            onClick={() => setIsMobileMenuOpen(false)}\n          >\n            Blog\n          </a>",
+          "line": 205,
+          "endLine": 211,
+          "column": 10,
+          "endColumn": 14,
+          "sourceFile": "src\\screens\\BlogPage\\BlogPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPage\\BlogPage.tsx:406:22-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a href=\"/blog\" className=\"hover:underline\">Blog</a>",
+          "line": 406,
+          "endLine": 406,
+          "column": 22,
+          "endColumn": 74,
+          "sourceFile": "src\\screens\\BlogPage\\BlogPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPostPage\\BlogPostPage.tsx:614:10-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\BlogPostPage\\BlogPostPage.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a href=\"/blog\" className=\"text-blue-600 underline\">Back to Blog</a>",
+          "line": 614,
+          "endLine": 614,
+          "column": 10,
+          "endColumn": 78,
+          "sourceFile": "src\\screens\\BlogPostPage\\BlogPostPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPostPage\\BlogPostPage.tsx:635:16-to-src\\screens\\ElementLight\\ElementLight.tsx",
+      "source": "src\\screens\\BlogPostPage\\BlogPostPage.tsx",
+      "target": "src\\screens\\ElementLight\\ElementLight.tsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<a href=\"/\" className=\"text-[#030303] hover:text-[#ffde17] transition-colors cursor-pointer\">Home</a>",
+          "line": 635,
+          "endLine": 635,
+          "column": 16,
+          "endColumn": 117,
+          "sourceFile": "src\\screens\\BlogPostPage\\BlogPostPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPostPage\\BlogPostPage.tsx:640:16-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\BlogPostPage\\BlogPostPage.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a href=\"/blog\" className=\"text-[#030303] hover:text-[#ffde17] transition-colors\">Blog</a>",
+          "line": 640,
+          "endLine": 640,
+          "column": 16,
+          "endColumn": 106,
+          "sourceFile": "src\\screens\\BlogPostPage\\BlogPostPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPostPage\\BlogPostPage.tsx:695:10-to-src\\screens\\ElementLight\\ElementLight.tsx",
+      "source": "src\\screens\\BlogPostPage\\BlogPostPage.tsx",
+      "target": "src\\screens\\ElementLight\\ElementLight.tsx",
+      "data": {
+        "viaRoute": "/",
+        "trigger": {
+          "element": "<a \n            href=\"/\" \n            className=\"block text-[#030303] hover:text-[#ffde17] transition-colors cursor-pointer text-lg font-medium\" \n            onClick={() => setIsMobileMenuOpen(false)}\n          >\n            Home\n          </a>",
+          "line": 695,
+          "endLine": 701,
+          "column": 10,
+          "endColumn": 14,
+          "sourceFile": "src\\screens\\BlogPostPage\\BlogPostPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPostPage\\BlogPostPage.tsx:730:10-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\BlogPostPage\\BlogPostPage.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a \n            href=\"/blog\" \n            className=\"block text-[#030303] hover:text-[#ffde17] transition-colors text-lg font-medium\"\n            onClick={() => setIsMobileMenuOpen(false)}\n          >\n            Blog\n          </a>",
+          "line": 730,
+          "endLine": 736,
+          "column": 10,
+          "endColumn": 14,
+          "sourceFile": "src\\screens\\BlogPostPage\\BlogPostPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPostPage\\BlogPostPage.tsx:765:14-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\BlogPostPage\\BlogPostPage.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a href=\"/blog\" className=\"text-[#030303] hover:text-gray-600 transition-colors\">\n                ← Back to Blog\n              </a>",
+          "line": 765,
+          "endLine": 767,
+          "column": 14,
+          "endColumn": 18,
+          "sourceFile": "src\\screens\\BlogPostPage\\BlogPostPage.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\BlogPostPage\\BlogPostPage.tsx:912:22-to-src\\screens\\BlogPage\\BlogPage.tsx",
+      "source": "src\\screens\\BlogPostPage\\BlogPostPage.tsx",
+      "target": "src\\screens\\BlogPage\\BlogPage.tsx",
+      "data": {
+        "viaRoute": "/blog",
+        "trigger": {
+          "element": "<a href=\"/blog\" className=\"hover:underline\">Blog</a>",
+          "line": 912,
+          "endLine": 912,
+          "column": 22,
+          "endColumn": 74,
+          "sourceFile": "src\\screens\\BlogPostPage\\BlogPostPage.tsx"
+        }
+      }
+    }
+  ]
+}

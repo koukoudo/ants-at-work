@@ -240,7 +240,7 @@ This enquiry was submitted from the Ants At Work website contact form.
     <div className="w-full min-h-screen bg-white">
 
       {/* Header Section */}
-      <header className={`fixed top-0 left-0 right-0 z-[99999] py-1 sm:py-1 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-md' : 'bg-transparent'}`}>
+      <header className={`fixed top-0 left-0 right-0 z-[99999] py-1 sm:py-1 transition-all duration-500 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-black/5' : 'bg-transparent'}`}>
         <div className="w-full px-4 sm:px-8 lg:px-16">
           <div className="flex items-center justify-between">
             <div 
@@ -252,21 +252,21 @@ This enquiry was submitted from the Ants At Work website contact form.
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-4 sm:space-x-6 lg:space-x-8">
               <nav className="flex items-center space-x-4 sm:space-x-6 lg:space-x-8">
-                <a href="#services" className="text-[#030303] hover:text-gray-600 transition-colors cursor-pointer" onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }}>Services</a>
-                <a href="#about" className="text-[#030303] hover:text-gray-600 transition-colors cursor-pointer" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }}>About</a>
-                <a href="#clients" className="text-[#030303] hover:text-gray-600 transition-colors cursor-pointer" onClick={(e) => { e.preventDefault(); document.getElementById('clients')?.scrollIntoView({ behavior: 'smooth' }); }}>Clients</a>
-                <a href="#gallery" className="text-[#030303] hover:text-gray-600 transition-colors cursor-pointer" onClick={(e) => { e.preventDefault(); document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' }); }}>Work</a>
-                <a href="/blog" className="text-[#030303] hover:text-gray-600 transition-colors">Blog</a>
+                <a href="#services" className="text-[#030303] font-medium hover:text-[#ffde17] transition-all duration-300 cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-[#ffde17] after:transition-all after:duration-300 hover:after:w-full" onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }}>Services</a>
+                <a href="#about" className="text-[#030303] font-medium hover:text-[#ffde17] transition-all duration-300 cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-[#ffde17] after:transition-all after:duration-300 hover:after:w-full" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }}>About</a>
+                <a href="#clients" className="text-[#030303] font-medium hover:text-[#ffde17] transition-all duration-300 cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-[#ffde17] after:transition-all after:duration-300 hover:after:w-full" onClick={(e) => { e.preventDefault(); document.getElementById('clients')?.scrollIntoView({ behavior: 'smooth' }); }}>Clients</a>
+                <a href="#gallery" className="text-[#030303] font-medium hover:text-[#ffde17] transition-all duration-300 cursor-pointer relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-[#ffde17] after:transition-all after:duration-300 hover:after:w-full" onClick={(e) => { e.preventDefault(); document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' }); }}>Work</a>
+                <a href="/blog" className="text-[#030303] font-medium hover:text-[#ffde17] transition-all duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-[#ffde17] after:transition-all after:duration-300 hover:after:w-full">Blog</a>
               </nav>
               <Button
-                className="bg-[#ffde17] text-black hover:bg-[#ffde17]/90 rounded-[10px] px-4 sm:px-6 lg:px-8 py-2 sm:py-3 text-sm sm:text-base"
+                className="bg-[#ffde17] text-black font-semibold hover:bg-black hover:text-[#ffde17] hover:shadow-lg hover:shadow-[#ffde17]/20 hover:scale-105 transition-all duration-300 rounded-[10px] px-4 sm:px-6 lg:px-8 py-2 sm:py-3 text-sm sm:text-base shadow-md"
                 onClick={() => {
                   document.getElementById('lets-build-together')?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
                 <span className="mr-1 sm:mr-2">Contact Us</span>
                 <img
-                  className="w-4 h-4 sm:w-6 sm:h-6"
+                  className="w-4 h-4 sm:w-6 sm:h-6 transition-transform group-hover:translate-x-1"
                   alt="Arrow"
                   src="https://c.animaapp.com/megx9igh612D8f/img/svg.svg"
                 />
@@ -437,70 +437,70 @@ This enquiry was submitted from the Ants At Work website contact form.
           <div className="absolute bottom-0 left-0 right-0 transform translate-y-3/4 z-20">
             <div className="w-full px-4 sm:px-8 lg:px-16">
               <div className="flex justify-center sm:justify-end">
-                <Card className="w-full max-w-[350px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[705px] bg-[#f3fff6d9] rounded-[15px] shadow-[0px_0px_25px_#03030326] border-0">
-                  <CardContent className="p-4 sm:p-6 lg:p-8">
-                    <h3 className="text-xl sm:text-2xl font-normal text-[#030303] mb-4 sm:mb-6 lg:mb-8">Contact us</h3>
+                <Card className="w-full max-w-[350px] sm:max-w-[500px] md:max-w-[600px] lg:max-w-[705px] bg-white/95 backdrop-blur-md rounded-[20px] shadow-2xl shadow-black/10 border border-gray-100 hover:shadow-3xl hover:shadow-black/15 transition-all duration-500">
+                  <CardContent className="p-6 sm:p-8 lg:p-10">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-[#030303] mb-6 sm:mb-8 lg:mb-10 tracking-tight">Get In Touch</h3>
                     
                     <form onSubmit={handleFormSubmit}>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
-                        <div className="relative">
-                          <Label className="text-xs sm:text-sm font-light text-[#030303] mb-1 sm:mb-2 block">
+                        <div className="relative group">
+                          <Label className="text-sm font-semibold text-[#030303] mb-2 block">
                             First name <span className="text-red-500">*</span>
                           </Label>
-                          <div className="border-b border-[#030303] h-[35px] sm:h-[41px] flex items-center">
+                          <div className="border-b-2 border-gray-300 group-focus-within:border-[#ffde17] h-[41px] flex items-center transition-colors duration-300">
                             <input
                               type="text"
                               value={formData.firstName}
                               onChange={(e) => handleInputChange('firstName', e.target.value)}
-                              className="w-full bg-transparent outline-none text-[#030303] text-sm sm:text-base"
+                              className="w-full bg-transparent outline-none text-[#030303] text-base placeholder:text-gray-400"
                               placeholder="Enter your first name"
                               required
                             />
                           </div>
                         </div>
                         
-                        <div className="relative">
-                          <Label className="text-xs sm:text-sm font-light text-[#030303] mb-1 sm:mb-2 block">
+                        <div className="relative group">
+                          <Label className="text-sm font-semibold text-[#030303] mb-2 block">
                             Last name <span className="text-red-500">*</span>
                           </Label>
-                          <div className="border-b border-[#030303] h-[35px] sm:h-[41px] flex items-center">
+                          <div className="border-b-2 border-gray-300 group-focus-within:border-[#ffde17] h-[41px] flex items-center transition-colors duration-300">
                             <input
                               type="text"
                               value={formData.lastName}
                               onChange={(e) => handleInputChange('lastName', e.target.value)}
-                              className="w-full bg-transparent outline-none text-[#030303] text-sm sm:text-base"
+                              className="w-full bg-transparent outline-none text-[#030303] text-base placeholder:text-gray-400"
                               placeholder="Enter your last name"
                               required
                             />
                           </div>
                         </div>
                         
-                        <div className="relative">
-                          <Label className="text-xs sm:text-sm font-light text-[#030303] mb-1 sm:mb-2 block">
+                        <div className="relative group">
+                          <Label className="text-sm font-semibold text-[#030303] mb-2 block">
                             Email <span className="text-red-500">*</span>
                           </Label>
-                          <div className="border-b border-[#030303] h-[35px] sm:h-[41px] flex items-center">
+                          <div className="border-b-2 border-gray-300 group-focus-within:border-[#ffde17] h-[41px] flex items-center transition-colors duration-300">
                             <input
                               type="email"
                               value={formData.email}
                               onChange={(e) => handleInputChange('email', e.target.value)}
-                              className="w-full bg-transparent outline-none text-[#030303] text-sm sm:text-base"
+                              className="w-full bg-transparent outline-none text-[#030303] text-base placeholder:text-gray-400"
                               placeholder="Enter your email"
                               required
                             />
                           </div>
                         </div>
                         
-                        <div className="relative">
-                          <Label className="text-xs sm:text-sm font-light text-[#030303] mb-1 sm:mb-2 block">
+                        <div className="relative group">
+                          <Label className="text-sm font-semibold text-[#030303] mb-2 block">
                             Phone <span className="text-red-500">*</span>
                           </Label>
-                          <div className="border-b border-[#030303] h-[35px] sm:h-[41px] flex items-center">
+                          <div className="border-b-2 border-gray-300 group-focus-within:border-[#ffde17] h-[41px] flex items-center transition-colors duration-300">
                             <input
                               type="tel"
                               value={formData.phone}
                               onChange={(e) => handleInputChange('phone', e.target.value)}
-                              className="w-full bg-transparent outline-none text-[#030303] text-sm sm:text-base"
+                              className="w-full bg-transparent outline-none text-[#030303] text-base placeholder:text-gray-400"
                               placeholder="Enter your phone number"
                               required
                             />
@@ -508,15 +508,15 @@ This enquiry was submitted from the Ants At Work website contact form.
                         </div>
                       </div>
                       
-                      <div className="mb-4 sm:mb-6">
-                        <Label className="text-xs sm:text-sm font-light text-[#030303] mb-1 sm:mb-2 block">
+                      <div className="mb-6 group">
+                        <Label className="text-sm font-semibold text-[#030303] mb-2 block">
                           Message <span className="text-red-500">*</span>
                         </Label>
-                        <div className="border-b border-[#030303] min-h-[70px] sm:min-h-[92px] p-2">
+                        <div className="border-b-2 border-gray-300 group-focus-within:border-[#ffde17] min-h-[92px] p-2 transition-colors duration-300">
                           <textarea
                             value={formData.message}
                             onChange={(e) => handleInputChange('message', e.target.value)}
-                            className="w-full bg-transparent outline-none text-[#030303] resize-none text-sm sm:text-base"
+                            className="w-full bg-transparent outline-none text-[#030303] resize-none text-base placeholder:text-gray-400"
                             placeholder="Enter your message"
                             rows={3}
                             required
@@ -535,10 +535,10 @@ This enquiry was submitted from the Ants At Work website contact form.
                       )}
                       
                       <div className="flex justify-end">
-                        <Button 
+                        <Button
                           type="submit"
                           disabled={isSubmitting}
-                          className="bg-[#ffde17] text-black hover:bg-[#ffde17]/90 rounded-[10px] px-4 sm:px-6 lg:px-8 py-2 text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed"
+                          className="bg-[#ffde17] text-black font-bold hover:bg-black hover:text-[#ffde17] hover:shadow-lg hover:shadow-[#ffde17]/30 hover:scale-105 transition-all duration-300 rounded-[10px] px-8 py-3 text-base disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 shadow-md"
                         >
                           {isSubmitting ? 'Sending...' : 'Submit'}
                         </Button>
@@ -569,13 +569,13 @@ This enquiry was submitted from the Ants At Work website contact form.
           <div className="absolute inset-0 opacity-[0.09] bg-[url(https://c.animaapp.com/megx9igh612D8f/img/wow-image---picture---construction-site.png)] bg-cover bg-center" />
           <div className="relative z-10 w-full px-8 lg:px-16 py-16">
             <div className="flex items-center mb-8">
-              <div className="w-4 h-4 mr-4 bg-[#ffde17] rounded-full"></div>
-              <h2 className="text-xl font-light text-[#030303]">OUR SERVICES</h2>
+              <div className="w-4 h-4 mr-4 bg-[#ffde17] rounded-full shadow-md shadow-[#ffde17]/50"></div>
+              <h2 className="text-xl font-bold text-[#030303] tracking-wider">OUR SERVICES</h2>
             </div>
             
                                <div className="mb-8 sm:mb-12 lg:mb-16">
-                     <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#030303] tracking-tight leading-tight max-w-4xl transition-colors duration-300 animate-fade-in-up px-4">
-                       From small repairs around your home or business space to the complete construction of a building, we can do it all.
+                     <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#030303] tracking-tight leading-tight max-w-4xl transition-colors duration-300 animate-fade-in-up px-4">
+                       From small repairs around your home or business space to the complete construction of a building, <span className="text-[#ffde17]">we can do it all.</span>
                      </h2>
                    </div>
 
@@ -584,13 +584,13 @@ This enquiry was submitted from the Ants At Work website contact form.
               <FeaturesListSection />
               
                                    {/* Specializations Card */}
-                     <Card className="w-full sm:w-[220px] md:w-[260px] lg:w-[300px] h-[410px] sm:h-[460px] md:h-[510px] lg:h-[564px] bg-[#1111104c] rounded-[15px] backdrop-blur-[10px] border-0 hover:bg-[#11111066] hover:scale-105 transition-all duration-300">
+                     <Card className="w-full sm:w-[220px] md:w-[260px] lg:w-[300px] h-[410px] sm:h-[460px] md:h-[510px] lg:h-[564px] bg-gradient-to-br from-[#ffde17] to-[#ffd000] rounded-[20px] border-2 border-white shadow-2xl shadow-[#ffde17]/20 hover:shadow-3xl hover:shadow-[#ffde17]/30 hover:scale-105 transition-all duration-500 group">
                        <CardContent className="p-4 sm:p-6 lg:p-8">
-                         <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#030303] mb-1 sm:mb-2">SPECIALISING IN:</h3>
-                         <div className="space-y-1">
+                         <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#030303] mb-3 sm:mb-4 tracking-tight">SPECIALISING IN:</h3>
+                         <div className="space-y-2">
                            {specializations.map((specialization, index) => (
-                             <div key={index} className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-[#030303] leading-tight hover:text-[#ffde17] transition-colors duration-200 break-words">
-                               {specialization}
+                             <div key={index} className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-[#030303] leading-tight hover:translate-x-1 transition-transform duration-200 break-words cursor-pointer">
+                               • {specialization}
                              </div>
                            ))}
                          </div>
@@ -611,12 +611,12 @@ This enquiry was submitted from the Ants At Work website contact form.
         <div className="relative min-h-[745px]">
           <div className="relative z-10 w-full px-8 lg:px-16 py-16">
             <div className="flex items-center mb-8">
-              <div className="w-4 h-4 mr-4 bg-[#ffde17] rounded-full"></div>
-              <h2 className="text-xl font-light text-white">ABOUT US</h2>
+              <div className="w-4 h-4 mr-4 bg-[#ffde17] rounded-full shadow-md shadow-[#ffde17]/50"></div>
+              <h2 className="text-xl font-bold text-white tracking-wider">ABOUT US</h2>
             </div>
             
-                               <div className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight mb-8 sm:mb-12 lg:mb-16 max-w-4xl transition-colors duration-300 animate-fade-in-left px-4">
-                     We are a generational name in the construction industry with a long heritage of delivering excellence as builders and renovators.
+                               <div className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-8 sm:mb-12 lg:mb-16 max-w-4xl transition-colors duration-300 animate-fade-in-left px-4">
+                     We are a <span className="text-[#ffde17]">generational name</span> in the construction industry with a long heritage of delivering excellence as builders and renovators.
                    </div>
             
             <ServicesSection />
@@ -639,8 +639,8 @@ This enquiry was submitted from the Ants At Work website contact form.
       >
         <div className="w-full px-8 lg:px-16">
           <div className="flex items-center mb-12">
-            <div className="w-4 h-4 mr-4 bg-[#ffde17] rounded-full"></div>
-            <h2 className="text-xl font-light text-[#030303]">OUR CLIENTS</h2>
+            <div className="w-4 h-4 mr-4 bg-[#ffde17] rounded-full shadow-md shadow-[#ffde17]/50"></div>
+            <h2 className="text-xl font-bold text-[#030303] tracking-wider">OUR CLIENTS</h2>
           </div>
           
           <div className="overflow-hidden -mx-8 lg:-mx-16">
@@ -697,18 +697,18 @@ This enquiry was submitted from the Ants At Work website contact form.
              >
                <div className="w-full px-8 lg:px-16">
                  <div className="flex items-center mb-8">
-                   <div className="w-4 h-4 mr-4 bg-[#ffde17] rounded-full"></div>
-                   <h2 className="text-xl font-light text-[#030303]">LATEST INSIGHTS</h2>
+                   <div className="w-4 h-4 mr-4 bg-[#ffde17] rounded-full shadow-md shadow-[#ffde17]/50"></div>
+                   <h2 className="text-xl font-bold text-[#030303] tracking-wider">LATEST INSIGHTS</h2>
                  </div>
                  <div className="mb-8 sm:mb-12 lg:mb-16">
-                   <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#030303] tracking-tight leading-tight max-w-4xl mb-4 sm:mb-6 lg:mb-8 px-4">
-                     Stay updated with our latest construction insights and industry tips.
+                   <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#030303] tracking-tight leading-tight max-w-4xl mb-4 sm:mb-6 lg:mb-8 px-4">
+                     Stay updated with our latest <span className="text-[#ffde17]">construction insights</span> and industry tips.
                    </h2>
                  </div>
                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                    {/* Featured Blog Post 1 */}
-                   <article 
-                     className={`bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-800 group cursor-pointer ${
+                   <article
+                     className={`bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-black/10 hover:scale-105 transition-all duration-500 group cursor-pointer ${
                        blogVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                      }`}
                      style={{ transitionDelay: '0.1s' }}
@@ -733,8 +733,8 @@ This enquiry was submitted from the Ants At Work website contact form.
                    </article>
 
                    {/* Featured Blog Post 2 */}
-                   <article 
-                     className={`bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-800 group cursor-pointer ${
+                   <article
+                     className={`bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-black/10 hover:scale-105 transition-all duration-500 group cursor-pointer ${
                        blogVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                      }`}
                      style={{ transitionDelay: '0.2s' }}
@@ -759,8 +759,8 @@ This enquiry was submitted from the Ants At Work website contact form.
                    </article>
 
                    {/* Featured Blog Post 3 */}
-                   <article 
-                     className={`bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-800 group cursor-pointer ${
+                   <article
+                     className={`bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-black/10 hover:scale-105 transition-all duration-500 group cursor-pointer ${
                        blogVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                      }`}
                      style={{ transitionDelay: '0.3s' }}
@@ -785,7 +785,7 @@ This enquiry was submitted from the Ants At Work website contact form.
                    </article>
                  </div>
                  <div className="text-center mt-12">
-                   <a href="/blog" className="inline-flex items-center bg-[#ffde17] text-[#030303] hover:bg-[#ffde17]/90 rounded-lg px-8 py-3 font-semibold transition-colors">
+                   <a href="/blog" className="inline-flex items-center bg-[#ffde17] text-[#030303] font-bold hover:bg-black hover:text-[#ffde17] hover:shadow-lg hover:shadow-[#ffde17]/30 hover:scale-105 rounded-lg px-8 py-3 transition-all duration-300 shadow-md">
                      View All Articles
                      <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -809,7 +809,7 @@ This enquiry was submitted from the Ants At Work website contact form.
                }`}
              >
                <div className="max-w-6xl mx-auto px-8 lg:px-16">
-                 <div className="bg-[#ffde17] rounded-2xl shadow-2xl p-8 sm:p-12 lg:p-16 relative -mb-24 sm:-mb-24 lg:-mb-32 z-[9999]">
+                 <div className="bg-gradient-to-br from-[#ffde17] to-[#ffd000] rounded-3xl shadow-2xl shadow-[#ffde17]/20 p-8 sm:p-12 lg:p-16 relative -mb-24 sm:-mb-24 lg:-mb-32 z-[9999] border-4 border-white">
                    <div className="text-center">
                      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#030303] mb-8 sm:mb-12 lg:mb-16 hover:scale-105 transition-transform duration-300 animate-fade-in-up px-4">
                        LET'S <span className="[font-family:'Permanent_Marker',Helvetica]">BUILD</span> TOGETHER

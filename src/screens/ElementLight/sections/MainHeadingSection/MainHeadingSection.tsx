@@ -4,7 +4,7 @@ export const MainHeadingSection = (): JSX.Element => {
   return (
     <section className="w-full relative px-4 sm:px-8 lg:px-16 flex items-start justify-center pt-8 sm:py-20 lg:py-24 mt-8 sm:mt-0">
       <div className="flex flex-col items-center justify-center text-center w-full">
-        <h1 className="[font-family:'Lato',Helvetica] font-bold text-[#030303] text-6xl sm:text-7xl md:text-8xl lg:text-[100px] xl:text-[120px] 2xl:text-[140px] tracking-[-2px] sm:tracking-[-4px] md:tracking-[-8px] lg:tracking-[-8px] xl:tracking-[-10px] 2xl:tracking-[-11.40px] leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-[140px] px-4 mb-4 sm:mb-8 lg:mb-1 max-w-none w-full drop-shadow-lg">
+        <h1 className="[font-family:'Lato',Helvetica] font-bold text-[#030303] text-6xl sm:text-7xl md:text-8xl lg:text-[100px] xl:text-[120px] 2xl:text-[140px] tracking-[-2px] sm:tracking-[-4px] md:tracking-[-8px] lg:tracking-[-8px] xl:tracking-[-10px] 2xl:tracking-[-11.40px] leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight 2xl:leading-[140px] px-4 mb-4 sm:mb-8 lg:mb-1 max-w-none w-full">
           <span className="block lg:hidden">
             Construction
             <br />
